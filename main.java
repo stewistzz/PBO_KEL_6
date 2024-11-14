@@ -17,5 +17,29 @@ public class main {
         daftarPegawai.add(tendik2);
 
         System.out.println("Jumlah Pegawai: " + daftarPegawai.size());
+
+        System.out.println();
+        // 2.4 object casting 1
+        System.out.println(dosen1.nip);
+        System.out.println(dosen1.nama);
+        System.out.println(dosen1.nidn);
+        dosen1.mengajar();
+        System.out.println();
+
+        // 2.4 object casting 4
+        Pegawai pegawai1 = dosen1;
+
+        // 2.4 object casting 5
+        System.out.println(pegawai1.nip);
+        System.out.println(pegawai1.nama);
+        System.out.println(pegawai1.nidn);
+        pegawai1.mengajar();
+
+        // 2.4 object casting 5
+        System.out.println(pegawai1.nip);
+        System.out.println(pegawai1.nama);
+        // System.out.println(pegawai1.nidn);
+        pegawai1.displayInfo();
+        System.out.println();
     }
 }
