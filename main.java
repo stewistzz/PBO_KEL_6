@@ -84,5 +84,18 @@ public class main {
         // System.out.println(pegawai1.nidn);
         pegawai1.displayInfo();
         System.out.println();
+
+        // 2.5 polymorphic 3
+        train(dosen1);
+        train(tendik1);
+
+    }
+    
+    // 2.5 polymorphic 1
+    public static void train(Pegawai pegawai) {
+        System.out.println("Memberikan pelatihan untuk pegawai");
+        pegawai.displayInfo();
+
+     
     }
 }
