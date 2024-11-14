@@ -69,14 +69,14 @@ public class main {
         dosen1.mengajar();
         System.out.println();
 
-        // 2.4 object casting 4
-        Pegawai pegawai1 = dosen1;
+        // // 2.4 object casting 4
+        // Pegawai pegawai1 = dosen1;
 
-        // 2.4 object casting 5
-        System.out.println(pegawai1.nip);
-        System.out.println(pegawai1.nama);
-        System.out.println(pegawai1.nidn);
-        pegawai1.mengajar();
+        // // 2.4 object casting 5
+        // System.out.println(pegawai1.nip);
+        // System.out.println(pegawai1.nama);
+        // System.out.println(pegawai1.nidn);
+        // pegawai1.mengajar();
 
         // 2.4 object casting 5
         System.out.println(pegawai1.nip);
