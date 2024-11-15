@@ -2,7 +2,7 @@ Jawaban Praktikum PBO - Polymorphism
 Pertanyaan
 1. Apakan upcasting dapat dilakukan dari suatu class terhadap class lain yang tidak memiliki
 relasi inheritance?
->tidak, upcasting tidak adapat dilakukan dari satu kelas ke kelas lain yang tidak memiliki relasi inheritance. upcasting berarti mengonversi referensi dari subclass ke superclass dalam hierarki kelas yang sama.
+>Tidak, upcasting tidak dapat dilakukan dari satu kelas ke kelas lain yang tidak memiliki relasi inheritance. Upcasting artinya merubah/ mengonversi refeerensi dari subclass ke superclass dalam class yang sama. jika kedua kelas tidak memiliki hubungan inheritance, maka upcasting tidak dapat dilakukan serta dapat menyebabkan kesalahan compiler..  
 
 2. Dari 2 baris kode program berikut, manakan proses upcasting yang tepat? Jelaskan
 Pegawai pegawai1 = new Dosen();
