@@ -45,15 +45,15 @@ public class main {
         System.out.println();
         System.out.println();*/
 
-        ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>(); 
-        // Menampilkan informasi dosen
-        System.out.println("Data Dosen :");
-        /*System.out.println("Data Dosen :");
-        dosen1.displayInfo();
-        System.out.println();
-        dosen2.displayInfo();
-        System.out.println();
-        System.out.println();*/
+        // ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>(); 
+        // // Menampilkan informasi dosen
+        // System.out.println("Data Dosen :");
+        // /*System.out.println("Data Dosen :");
+        // dosen1.displayInfo();
+        // System.out.println();
+        // dosen2.displayInfo();
+        // System.out.println();
+        // System.out.println();*/
       
         // Menampilkan informasi tenaga kependidikan
         System.out.println("Data Tenaga Kependidikan :");
@@ -99,6 +99,34 @@ public class main {
         train(dosen1);
         train(tendik1);
 
+
+        // pertanyaan 5 readme
+        // Instance Pegawai (sebenarnya instance Dosen)
+        Pegawai pegawaiDosen = new Dosen("19940201", "Widia, S.Kom., M.Kom.", "199402");
+
+        // Downcasting yang valid
+        if (pegawaiDosen instanceof Dosen) {
+            Dosen dosen = (Dosen) pegawaiDosen; // Aman karena sebenarnya adalah Dosen
+            System.out.println();
+            System.out.println("Downcasting berhasil!");
+            dosen.mengajar();
+        } else {
+            System.out.println();
+            System.out.println("Gagal melakukan downcasting!");
+        }
+
+        // Instance Pegawai biasa
+        Pegawai pegawai = new Pegawai("19750301", "Aida, A.Md.");
+
+        // Downcasting yang tidak valid
+        if (pegawai instanceof Dosen) {
+            Dosen dosen = (Dosen) pegawai; // Akan menyebabkan ClassCastException
+            dosen.mengajar();
+        } else {
+            System.out.println();
+            System.out.println("Gagal melakukan downcasting karena pegawai bukan Dosen!");
+        }
+
     }
     
     // 2.5 polymorphic 1
@@ -116,6 +144,5 @@ public class main {
             System.out.println("Memberikan pelatihan pedagogik");
             
         }
-
     }
 }
