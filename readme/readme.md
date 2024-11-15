@@ -2,6 +2,7 @@ Jawaban Praktikum PBO - Polymorphism
 Pertanyaan
 1. Apakan upcasting dapat dilakukan dari suatu class terhadap class lain yang tidak memiliki
 relasi inheritance?
+>tidak, upcasting tidak adapat dilakukan dari satu kelas ke kelas lain yang tidak memiliki relasi inheritance. upcasting berarti mengonversi referensi dari subclass ke superclass dalam hierarki kelas yang sama.
 
 2. Dari 2 baris kode program berikut, manakan proses upcasting yang tepat? Jelaskan
 Pegawai pegawai1 = new Dosen();
@@ -20,9 +21,32 @@ Pegawai pegawai1 = (Pegawai) new Dosen();
    >Penggunaan dalam Kondisi: instanceof sering digunakan dalam pernyataan kondisi,         seperti if, untuk mengambil keputusan berdasarkan tipe objek yang sedang diproses
 4. Apa yang dimaksud heterogenous collection?
     >Heterogeneous collection adalah kumpulan atau koleksi data yang dapat menyimpan berbagai tipe data yang berbeda dalam satu struktur.dapat menyimpan objek atau data dengan tipe yang bervariasi, bukan hanya satu tipe data yang sama.
+
 5. Sebuah object diinstansiasi dari class Pegawai. Kemudian dilakukan downcasting menjadi
 object bertipe Dosen. Apakah hal ini dapat dilakukan? Lakukan percobaan untuk
 membuktikannya.
-    >Sebuah object diinstansiasi dari class Pegawai. Kemudian dilakukan downcasting menjadi
-    object bertipe Dosen. Apakah hal ini dapat dilakukan? Lakukan percobaan untuk
-    membuktikannya.
+> jawaban
+ Pegawai pegawaiDosen = new Dosen("19940201", "Widia, S.Kom., M.Kom.", "199402");
+
+        // Downcasting yang valid
+        if (pegawaiDosen instanceof Dosen) {
+            Dosen dosen = (Dosen) pegawaiDosen; // Aman karena sebenarnya adalah Dosen
+            System.out.println();
+            System.out.println("Downcasting berhasil!");
+            dosen.mengajar();
+        } else {
+            System.out.println();
+            System.out.println("Gagal melakukan downcasting!");
+        }
+
+        // Instance Pegawai biasa
+        Pegawai pegawai = new Pegawai("19750301", "Aida, A.Md.");
+
+        // Downcasting yang tidak valid
+        if (pegawai instanceof Dosen) {
+            Dosen dosen = (Dosen) pegawai; // Akan menyebabkan ClassCastException
+            dosen.mengajar();
+        } else {
+            System.out.println();
+            System.out.println("Gagal melakukan downcasting karena pegawai bukan Dosen!");
+        }
