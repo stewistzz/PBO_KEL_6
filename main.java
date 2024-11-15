@@ -45,6 +45,16 @@ public class main {
         System.out.println();
         System.out.println();*/
 
+        ArrayList<Pegawai> daftarPegawai = new ArrayList<Pegawai>(); 
+        // Menampilkan informasi dosen
+        System.out.println("Data Dosen :");
+        /*System.out.println("Data Dosen :");
+        dosen1.displayInfo();
+        System.out.println();
+        dosen2.displayInfo();
+        System.out.println();
+        System.out.println();*/
+      
         // Menampilkan informasi tenaga kependidikan
         System.out.println("Data Tenaga Kependidikan :");
         /*System.out.println("Data Tenaga Kependidikan :");
@@ -96,6 +106,16 @@ public class main {
         System.out.println("Memberikan pelatihan untuk pegawai");
         pegawai.displayInfo();
 
-     
+        // 2.5 polymorphic 4
+        //hanya test
+        // System.out.println(pegawai.nidn);
+        // System.out.println(pegawai.kategori);;pegawai.mengajar;
+
+        // 2.5 polymorphic 6
+        if (pegawai instanceof Dosen) {
+            System.out.println("Memberikan pelatihan pedagogik");
+            
+        }
+
     }
 }
