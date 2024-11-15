@@ -21,6 +21,10 @@ Keduanya merupakan proses upcasting yang benar, namun dengan perbedaan sebagai b
    >Menghindari Kesalahan: Dengan menggunakan instanceof, dapat menghindari kesalahan       yang mungkin terjadi jika mencoba menggunakan metode yang tidak ada pada tipe          objek tertentu. Ini membantu dalam menulis kode yang lebih aman dan dapat              diandalkan.
    >Penggunaan dalam Kondisi: instanceof sering digunakan dalam pernyataan kondisi,         seperti if, untuk mengambil keputusan berdasarkan tipe objek yang sedang diproses
 4. Apa yang dimaksud heterogenous collection?
+    >Heterogeneous collection adalah kumpulan atau koleksi data yang dapat menyimpan berbagai tipe data yang berbeda dalam satu struktur.dapat menyimpan objek atau data dengan tipe yang bervariasi, bukan hanya satu tipe data yang sama.
 5. Sebuah object diinstansiasi dari class Pegawai. Kemudian dilakukan downcasting menjadi
 object bertipe Dosen. Apakah hal ini dapat dilakukan? Lakukan percobaan untuk
 membuktikannya.
+    >Sebuah object diinstansiasi dari class Pegawai. Kemudian dilakukan downcasting menjadi
+    object bertipe Dosen. Apakah hal ini dapat dilakukan? Lakukan percobaan untuk
+    membuktikannya.
